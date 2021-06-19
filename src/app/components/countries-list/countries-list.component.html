@@ -9,7 +9,7 @@
         
         fxLayout.gt-sm="row" fxLayoutGap="10px" fxLayoutAlign.gt-sm="space-between start"
                 fxLayout.lt-md="column" fxLayoutGap="50px" fxLayoutAlign.lt-md="space-between start" >
-            <div class="input-with-img" fxLayout="column" fxLayoutAlign="start start" >
+            <div class="input-with-img" fxLayout="column" fxLayoutAlign="start start" fxFlex.lt-sm="300px" >
                 <input type="text" placeholder="Search for a country..." [(ngModel)]="searchValue" (input)="searchCountry()">
                 <mat-icon class="input-img">search</mat-icon>
             </div>

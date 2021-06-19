@@ -11,8 +11,8 @@
 
 #bg-search-bar{
     position: fixed;
-    padding-top: 50px;
-    top: 60px;
+    padding-top: 110px;
+    top: 0;
     left: 0;
     width: 100%;
     z-index: 99;
