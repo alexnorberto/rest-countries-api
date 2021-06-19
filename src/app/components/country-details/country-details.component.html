@@ -29,7 +29,7 @@
         </div>
         <div class="details-text" fxLayout="row" fxLayoutAlign="start start" fxLayout.xs="column" fxLayoutAlign.xs="start start"> 
             <div style="white-space: nowrap;">
-                <p><strong>Border Countries: </strong>
+                <p><strong>Border Countries: </strong><span *ngIf="noBorders">No border countries</span></p>
             </div>
             <div fxLayout="row wrap" fxLayoutAlign="start start" >
                 <div class="border-card" *ngFor="let border of currentBorders"  (click)="goToCountryPage(border)">{{border.toString()}}</div>
