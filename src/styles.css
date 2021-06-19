@@ -1,1 +1,169 @@
 /* You can add global styles to this file, and also import other style files */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box !important;
+    color: var(--text);
+}
+
+
+html, body { height: 100%; }
+body { margin: 0; font-family: "Nunito Sans", "Roboto", "Helvetica Neue", sans-serif !important; }
+body { background-color: var(--bg); }
+
+:root {
+    --color1: #fff;
+
+    --darkMode: hsl(209, 23%, 22%); /*   - Dark Blue (Dark Mode Elements): hsl(209, 23%, 22%)*/
+    --darkModeBG: hsl(207, 26%, 17%);/*- Very Dark Blue (Dark Mode Background): hsl(207, 26%, 17%)*/
+
+    --lightModeTxt: hsl(200, 15%, 8%);/*- Very Dark Blue (Light Mode Text): hsl(200, 15%, 8%)*/
+    --lightModeInput: hsl(0, 0%, 52%);/*- Dark Gray (Light Mode Input): hsl(0, 0%, 52%)*/
+    --lightModeBG: hsl(0, 0%, 98%);/*- Very Light Gray (Light Mode Background): hsl(0, 0%, 98%)*/
+
+    --white: hsl(0, 0%, 100%);/*- White (Dark Mode Text & Light Mode Elements): hsl(0, 0%, 100%)*/
+
+    --bg: var(--lightModeBG);
+    --elements: var(--white);
+    --text: var(--lightModeTxt);
+    --input: var(--lightModeInput);
+
+}
+
+#main-container{
+    margin: auto;
+}
+
+#loadingBar{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255,255,255,.8);
+    z-index: 1000;
+    position: fixed;
+    top: 0;
+    padding: 50px;
+}
+
+.input-with-img {
+    width: 480px;
+    height: 57px;
+    position: relative;
+    color: var(--input);
+    margin-bottom: 50px;
+}
+
+.input-with-img input[type=text]{
+    padding-left: 75px;
+    width:100%;
+    height: 57px;
+    border-radius: 5px;
+    border: var(--elements);
+    background: var(--elements);
+    box-shadow: 0px 0px 4px 1px rgba(0,0,0,.1);
+    outline:none;
+    font-family: Nunito Sans;
+    color: var(--input);
+}
+
+.input-img {
+    position: absolute;
+    left: 30px;
+    top: 17px;
+}
+
+.mat-select-panel{
+    background-color: yellow;
+}
+
+#filterSelect{
+    width: 200px;
+    border-radius: 5px;
+    margin-bottom: 50px;
+}
+
+.filterOptions{
+    background-color: var(--elements);
+    margin-top: 35px;
+    width: 100px;
+    min-width: 100px;
+}
+
+.mat-options {
+    width: 20px;
+} 
+
+.mat-form-field-flex {
+    border-radius: 5px !important;
+    height: 57px;
+    border: var(--elements) !important;
+    background: var(--elements) !important;
+    box-shadow: 0px 0px 4px 1px rgba(0,0,0,.1);
+    outline:none;
+    font-family: Nunito Sans;
+    font-size: 14px;
+    color: var(--input);
+ }
+
+.mat-form-field-underline {
+display: none !important;
+}
+
+mat-card {
+    width: 266px;
+    color: var(--text) !important;
+    background-color: var(--elements) !important;
+    opacity: 1;
+}
+
+.mat-card-image-container{
+    overflow: hidden;
+    margin: -16px !important;
+    width: 266px !important;
+    height: 161px !important;
+    border-radius: 5px 5px 0 0;
+}
+
+.mat-card-image {
+    
+    min-height: 161px !important;
+    margin: 0 !important;
+}
+
+mat-card-content{
+    font-family: Nunito Sans!important;
+    font-size: 14px !important;
+    padding: 10px; 
+    line-height: 10px;
+    height: 170px !important;
+}
+
+.cardCountryName{
+    font-size: 18px;
+    line-height: 14px;
+    font-weight: 800;
+    font-family: Nunito Sans;
+    margin-top: 32px !important;
+    margin-bottom: 20px !important;
+}
+
+.mat-card:hover{
+    cursor:pointer;
+    opacity: .8;
+}
+
+:focus {outline:0 !important;}
+
+.custom-button{
+    padding: 5px 35px !important;
+    border-radius: 5px;
+    border: var(--elements);
+    background: var(--elements);
+    box-shadow: 0px 0px 4px 1px rgba(0,0,0,.1);
+    outline:none;
+    font-family: Nunito Sans;
+    line-height: 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor:pointer;
+}

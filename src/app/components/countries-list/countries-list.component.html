@@ -1,0 +1,38 @@
+<div fxLayout="row wrap" fxLayoutGap="10px" fxLayoutAlign="space-between start">
+    <div class="input-with-img" fxLayout="column" fxLayoutAlign="start start">
+        <input type="text" placeholder="Search for a country..." [(ngModel)]="searchValue" (input)="searchCountry()">
+        <mat-icon class="input-img">search</mat-icon>
+    </div>
+    <div>
+        <!-- 200 de largura, 164 alt drop -->
+        <mat-form-field appearance="fill" id="filterSelect">
+            <mat-label>Filter by Region</mat-label>
+            <mat-select disableOptionCentering panelClass="filterOptions" id="selectedRegion" >
+                <mat-option *ngFor="let region of regions" [value]="region.value" (click)="getFromRegion(region.value)">
+                {{region.viewValue}}
+                </mat-option>
+            </mat-select>
+        </mat-form-field>
+    </div>
+</div>
+
+<div fxLayoutGap="75px grid" fxLayout="row wrap" fxLayoutAlign="space-between start">
+
+    <div *ngFor="let country of countriesList; let i = index"
+        (click)="setCurrentCountry(country.name,i)"
+        class="countryCard"
+        routerLink="/countries/{{country.name}}"
+    >
+        <mat-card  class="example-card">    
+            <div class="mat-card-image-container" fxLayoutAlign="center center">
+                <img mat-card-image src={{country.flag}} alt={{country.name}} >
+            </div>
+            <mat-card-content>
+                <p class="cardCountryName">{{country.name}}</p>
+                <p><strong>Population: </strong>{{country.population}}</p>
+                <p><strong>Region: </strong>{{country.region}}</p>
+                <p><strong>Capital: </strong>{{country.capital}}</p>    
+            </mat-card-content>
+        </mat-card>
+    </div>
+</div>
