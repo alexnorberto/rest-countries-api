@@ -1,3 +1,4 @@
+
 #details-name-container h1{
     font-size: 28px;
     font-weight: 800;
@@ -9,7 +10,7 @@
 }
 
 .details-items{
-    min-width: 250px;
+    min-width: 300px;
     height: 200px;
 }
 

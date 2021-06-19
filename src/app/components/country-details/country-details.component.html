@@ -3,17 +3,17 @@
     
 </div>
 <div *ngIf="currentCountry">
-<div id="details-content-container" fxLayout="row wrap" fxLayoutAlign="space-between center">
+<div id="details-content-container" fxLayoutGap="75px" fxLayoutGap.lt-md="0" fxLayout="row" fxLayoutAlign="start center" fxLayout.lt-md="column" fxLayoutAlign.lt-md ="center center">
     
-    <div id="details-image-container" fxLayout="row" fxLayoutAlign="center center"  style="width:45%; min-width: 500px;  background-color: black;">
-        <img style="min-width: 500px; margin: auto" src={{currentCountry.flag}}>
+    <div id="details-image-container" fxLayout="row" fxLayoutAlign="center center" >
+        <img style="margin: auto; min-width: 300px; width: 100%; max-width: 700px; " src={{currentCountry.flag}}>
     </div>
 
-    <div id="details-info-container"  style="width:50%" fxLayout="column" fxLayoutAlign="center center">
+    <div id="details-info-container" fxLayout="column" fxLayoutAlign="center center">
         <div id="details-name-container" class="details-text" fxLayout="row" fxLayoutAlign="start start">
             <h1>{{currentCountry.name}}</h1>
         </div >
-        <div id="details-details-container" class="details-text" fxLayout="row wrap" fxLayoutAlign="space-between center" >
+        <div id="details-details-container" class="details-text" fxLayout="row" fxLayoutAlign="start center" fxLayout.lt-md="column" fxLayoutAlign.lt-md ="center center">
             <div class="details-items" fxLayout="column" fxLayoutAlign="start start">
                 <p><strong>Native Name: </strong>{{currentCountry.nativeName}}</p>
                 <p><strong>Population: </strong>{{currentCountry.population}}</p>
@@ -27,11 +27,11 @@
                 <p><strong>languages: </strong>{{currentCountry.languages[0].name}}</p>
             </div>
         </div>
-        <div class="details-text" fxLayout="row" fxLayoutAlign="start start">
+        <div class="details-text" fxLayout="row" fxLayoutAlign="start start" fxLayout.xs="column" fxLayoutAlign.xs="start start"> 
             <div style="white-space: nowrap;">
                 <p><strong>Border Countries: </strong>
             </div>
-            <div fxLayout="row wrap" fxLayoutAlign="start start">
+            <div fxLayout="row wrap" fxLayoutAlign="start start" >
                 <div class="border-card" *ngFor="let border of currentBorders"  (click)="goToCountryPage(border)">{{border.toString()}}</div>
             </div>
         </div>
