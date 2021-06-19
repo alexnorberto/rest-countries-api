@@ -52,6 +52,16 @@ body { background-color: var(--bg); }
     margin-bottom: 0px;
 }
 
+@media (max-width: 500px) { 
+    .input-with-img {
+        width: 280px;
+        height: 57px;
+        position: relative;
+        color: var(--input);
+        margin-bottom: 0px;
+    }
+ }
+
 .input-with-img input[type=text]{
     padding-left: 75px;
     width:100%;

@@ -23,6 +23,7 @@ export class CountryDetailsComponent implements OnInit {
   ) { }
 
   ngOnInit(): void {
+    window.scrollTo(0,100);
     //history.state get state data passed by the routerlink
     if (history.state.country){
       this.currentCountry = history.state.country;
@@ -94,6 +95,7 @@ export class CountryDetailsComponent implements OnInit {
     this.router.navigate(['countries/'+name], { state: { country:this.currentCountry } });
     this.countryName = name;
     this.currentBorders = [];
+    window.scrollTo(0,100);
     this.getCurrentCountry(name);
   }
 
