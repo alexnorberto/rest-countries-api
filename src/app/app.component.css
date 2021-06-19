@@ -1,0 +1,17 @@
+#toolbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+
+    background-color: var(--elements);
+}
+
+#toolbar h1 {
+    font-weight: 800; font-family: 'Nunito Sans'; cursor: pointer;
+}
+
+#main-container{
+    margin: 100px auto;
+}
+

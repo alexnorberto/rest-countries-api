@@ -24,6 +24,7 @@ import {MatListModule} from '@angular/material/list';
 import {MatSelectModule} from '@angular/material/select';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import { FlexLayoutModule } from '@angular/flex-layout';
+import {MatPaginatorModule} from '@angular/material/paginator';
 
 
 @NgModule({
@@ -50,7 +51,8 @@ import { FlexLayoutModule } from '@angular/flex-layout';
     MatListModule,
     MatSelectModule,
     MatFormFieldModule,
-    FlexLayoutModule,    
+    FlexLayoutModule,   
+    MatPaginatorModule 
 
   ],
   providers: [],

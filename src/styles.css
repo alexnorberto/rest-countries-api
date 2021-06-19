@@ -49,7 +49,7 @@ body { background-color: var(--bg); }
     height: 57px;
     position: relative;
     color: var(--input);
-    margin-bottom: 50px;
+    margin-bottom: 0px;
 }
 
 .input-with-img input[type=text]{
@@ -78,7 +78,7 @@ body { background-color: var(--bg); }
 #filterSelect{
     width: 200px;
     border-radius: 5px;
-    margin-bottom: 50px;
+    margin-bottom: 0px;
 }
 
 .filterOptions{

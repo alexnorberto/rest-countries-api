@@ -1,0 +1,23 @@
+#ssearch-bar{
+    position: sticky;
+    top: 100px;
+    z-index: 99;
+    border-radius: 5px;  
+}
+
+#countries-list-container{
+    margin-top: 200px;
+}
+
+#bg-search-bar{
+    position: fixed;
+    padding-top: 50px;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    z-index: 99;
+    background-color: var(--bg);    
+}
+
+
+

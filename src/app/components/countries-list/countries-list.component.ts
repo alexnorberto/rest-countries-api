@@ -62,6 +62,7 @@ export class CountriesListComponent implements OnInit {
         this.countriesList = response;
         this.countriesListForSearch = response;
         console.log(this.countriesList);
+        window.scrollTo(0, 0);
         this.appComponent.toggleLoading("none");
       },
       error => {
